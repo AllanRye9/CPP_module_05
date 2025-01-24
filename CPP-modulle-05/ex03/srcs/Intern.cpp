@@ -6,9 +6,9 @@ Intern::Intern()
 	makeFormFunc[1] = &Intern::makeRobotomyRequestForm;
 	makeFormFunc[2] = &Intern::makePresidentialPardonForm;
 
-	formNames[0] = "shrubbery creation";
-	formNames[1] = "robotomy request";
-	formNames[2] = "presidential pardon";
+	formNames[0] = "shrubbery";
+	formNames[1] = "robot";
+	formNames[2] = "presidential";
 	std::cout << "An Intern created" << std::endl;
 }
 

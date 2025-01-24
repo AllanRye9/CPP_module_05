@@ -9,23 +9,23 @@ int	main()
 {
 	try
 	{
-		Bureaucrat  samia("Samia", 3);
-		Bureaucrat  mohra("Mohra", 25);
-		Bureaucrat	bob("Bob", 40);
-		Bureaucrat  tukka("Tukka", 137);
-		Bureaucrat	jim("Jim", 148);
+		Bureaucrat  Steve("Steve", 3);
+		Bureaucrat  Evans("Evans", 25);
+		Bureaucrat	Rooney("Rooney", 40);
+		Bureaucrat  Timothy("Timothy", 137);
+		Bureaucrat	Julius("Julius", 148);
 
-		Intern someRandomIntern;
+		Intern Intern;
 
 		AForm* rrf;
 		AForm* ppf;
 		AForm* scf;
 
-		rrf = someRandomIntern.makeForm("robotomy request", "Bender");
-		ppf = someRandomIntern.makeForm("presidential pardon", "Fender");
-		scf = someRandomIntern.makeForm("shrubbery creation", "Mender");
+		rrf = Intern.makeForm("robot", "Bender");
+		ppf = Intern.makeForm("presidential", "Fender");
+		scf = Intern.makeForm("shrubberrequesty", "Mender");
 
-		bob.signForm(*rrf);
+		Rooney.signForm(*rrf);
 		
 	
 		delete rrf;

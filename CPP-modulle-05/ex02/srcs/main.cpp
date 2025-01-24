@@ -8,29 +8,29 @@ int	main()
 {
 	try
 	{
-		Bureaucrat  samia("Samia", 3);
-		Bureaucrat  mohra("Mohra", 25);
-		Bureaucrat	bob("Bob", 40);
-		Bureaucrat  tukka("Tukka", 137);
-		Bureaucrat	jim("Jim", 148);
+		Bureaucrat  Peter("Peter", 3);
+		Bureaucrat  Tonny("Tonny", 25);
+		Bureaucrat	James("James", 40);
+		Bureaucrat  Isaac("Isaac", 137);
+		Bureaucrat	Reagan("Reagan", 26);
 
-		ShrubberyCreationForm	tree("palmtree");
-		jim.signForm(tree);
-		bob.signForm(tree);
-		tree.execute(jim);
-		tree.execute(tukka);
+		ShrubberyCreationForm	File1("ResearchFile");
+		Reagan.signForm(File1);
+		James.signForm(File1);
+		File1.execute(Reagan);
+		File1.execute(Isaac);
 
-		RobotomyRequestForm	robot("robot");
-		jim.signForm(robot);
-		bob.signForm(robot);
-		robot.execute(tukka);
-		robot.execute(mohra);
+		RobotomyRequestForm	File2("SurveyFile");
+		Reagan.signForm(File2);
+		James.signForm(File2);
+		File2.execute(Isaac);
+		File2.execute(Tonny);
 
-		PresidentialPardonForm	pardon("pardon");
-		bob.signForm(pardon);
-		mohra.signForm(pardon);
-		pardon.execute(mohra);
-		pardon.execute(samia);
+		PresidentialPardonForm	File3("AdmissionFile");
+		James.signForm(File3);
+		Tonny.signForm(File3);
+		File3.execute(Tonny);
+		File3.execute(Peter);
 		
 	}
 	catch(const std::exception& e)
