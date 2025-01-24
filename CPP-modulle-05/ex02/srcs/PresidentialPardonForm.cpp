@@ -32,8 +32,8 @@ void PresidentialPardonForm::execute(Bureaucrat const & executor) const
     }
     catch(const std::exception &e)
     {
+        std::cerr << "An exception ocurred due to " << std::endl;
         std::cerr << e.what() << std::endl;
-        std::cerr << "Due to FormNotSignedException or GradeTooLowException" << std::endl;
     }
 }
 PresidentialPardonForm::~PresidentialPardonForm()

@@ -3,9 +3,9 @@
 
 int main()
 {
-    Bureaucrat *officer = new Bureaucrat("Chris", 149);
+    Bureaucrat *officer = new Bureaucrat("Chris", 14);
     Form();
-    Form person("Luda", 150, 149);
+    Form person("Luda", 120, 125);
     person.beSigned(*officer);
     std::cout << person;
     delete officer;

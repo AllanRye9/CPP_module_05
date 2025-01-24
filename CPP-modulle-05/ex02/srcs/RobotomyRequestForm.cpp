@@ -27,9 +27,9 @@ void RobotomyRequestForm::execute(Bureaucrat const & executor) const
         std::cout << "RobotomyRequestForm" << this->_name << " to be exectued by " << executor.getName() << std::endl;
         halfsucess = halfsucess % 2;
         if (halfsucess)
-            std::cout << "* drilling noises * " << this->_target << " has been robotomized successfully" << std::endl;
+            std::cout << "*** Drilling noises * " << this->_target << " has been robotomized successfully" << std::endl;
         else
-            std::cout << this->_target << " failed to robotomize" << std::endl;
+            std::cout << this->_target << " failed to robotomize ***" << std::endl;
     }
     catch(const std::exception & e)
     {

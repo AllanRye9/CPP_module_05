@@ -21,13 +21,13 @@ int	main()
 		AForm* ppf;
 		AForm* scf;
 
-		rrf = Intern.makeForm("robot", "Bender");
-		ppf = Intern.makeForm("presidential", "Fender");
-		scf = Intern.makeForm("shrubberrequesty", "Mender");
+		rrf = Intern.makeForm("robot", "splendid");
+		ppf = Intern.makeForm("presidential", "Superb");
+		scf = Intern.makeForm("shrubbery", "Ambicious");
 
 		Rooney.signForm(*rrf);
-		
-	
+
+
 		delete rrf;
 		delete ppf;
 		delete scf;

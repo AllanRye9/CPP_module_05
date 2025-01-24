@@ -3,8 +3,8 @@
 int main()
 {
     // Bureaucrat officer;
-    Bureaucrat officer("Chris", 100);
-    // officer.gradeIncrement();
+    Bureaucrat officer("Chris", 15);
+    officer.gradeIncrement();
     // officer.gradeDecrement();
     std::cout << officer;
     return 0;

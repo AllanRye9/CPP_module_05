@@ -31,12 +31,12 @@ void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
         std::cout << "Creating a shrubbery in " << this->_target << " by " << executor.getName() << std::endl;
         file << "💣💜  𝒽𝔢𝔶 ＨẸⓇє 𝐢ⓣ ｉＳ 𝕥𝔞кє ŤＩΜｅ Ⓣ𝐎 άη𝕒ˡⓨ𝕫𝐄 𝕋ｈ𝐄 ＣㄖⓃţⓔ𝐫  ♝💚 \n"; 
         file << "𝓱𝓮𝔂 𝓱𝓮𝓻𝓮 𝓲𝓽 𝓲𝓼 𝓽𝓪𝓴𝓮 𝓽𝓲𝓶𝓮 𝓽𝓸 𝓪𝓷𝓪𝓵𝔂𝔃𝓮 𝓽𝓱𝓮 𝓬𝓸𝓷𝓽𝓮𝓻 \n"; 
-        file << "ꫝꫀꪗ ꫝꫀ᥅ꫀ ꠸ꪻ ꠸ᦓ ꪻꪖᛕꫀ ꪻ꠸ꪑꫀ ꪻꪮ ꪖꪀꪖꪶꪗƺꫀ ꪻꫝꫀ ᥴꪮꪀꪻꫀ᥅ \n"; 
+        file << "ꫝꫀꪗ ꫝꫀ᥅ꫀ ꠸ꪻ ꠸ᦓ ꪻꪖᛕꫀ ꪻ꠸ꪑꫀ ꪻꪮ ꪖꪀꪖꪶꪗƺꫀ ꪻꫝꫀ ᥴꪮꪀꪻꫀ᥅ \n";
     }
     catch(const std::exception &e)
     {
-        std::cerr << e.what() << '\n';
-        std::cerr << "ShrubberyCreationForm " << this->_target << " cannot be executed by " << executor.getName() << std::endl;
+        std::cerr << "ShrubberyCreationForm " << this->_target << " cannot be executed by " << executor.getName() << " because " << std::endl;
+        std::cerr << e.what() << std::endl;
         return ;
     }
 }
